@@ -63,7 +63,6 @@
 
 	.navbar {
 		margin-bottom: 0;
-		border-bottom: 1px solid rgba(255,255,255,.3);
 		
 	}
 
@@ -118,6 +117,13 @@
 	} /* affects colour of the navbar text */
 	
 	.navbar-custom.top-nav-collapse ul.nav li a:hover {
+		-webkit-transition: all .2s ease-in-out;
+		-moz-transition: all .2s ease-in-out;
+		transition: all .2s ease-in-out;
+		color: #f2b21f;
+	} /* affects colour of the navbar text */
+	
+	.navbar-custom.top-nav-collapse ul.nav li a.active {
 		-webkit-transition: all .2s ease-in-out;
 		-moz-transition: all .2s ease-in-out;
 		transition: all .2s ease-in-out;
@@ -182,6 +188,7 @@
 	.navbar-toggle:active {
 		outline: 0;
 	}
+	
 
 
 	/* loader */
@@ -371,19 +378,11 @@
 	---  Classes
 	============================ */
 
-	.parallax img {
-		
-	}
-	.parallax-container .tint{
-		background-color: rgba(0,10,0,0, 0.3);
-		z-index: 300;
-	}
 	.parallax-container h1 {
 		color: #ffffff;
 		text-align: center;
 		position: relative;
 		top: 35%;
-		z-index: 200;
 	}
 
 
@@ -762,6 +761,26 @@
 		text-decoration: none;
 		color: #176e61;
 	}
+	
+	.widget-btn {
+		background-color: #aa9986;
+		color: #fff;
+		font-family: 'Quicksand', sans-serif;
+		border: 1px solid transparent;
+		border-radius: 2px;
+		padding: 10px;
+		margin: 10px 10px 10px 0px;
+	}
+	
+	.widget-btn:hover {
+		background-color: #544b42;
+		color: #fff;
+		font-family: 'Quicksand', sans-serif;
+		border: 1px solid transparent;
+		border-radius: 2px;
+		padding: 10px;
+		margin: 10px 10px 10px 0px;
+	}
 
 
 	/* ===========================
@@ -821,6 +840,45 @@
 	.calendar .slogan h4 {
 		color: #fff;
 		text-shadow: -1px 1px 1px #000;
+	}
+	
+	/* ===========================
+	--- parallax
+	============================ */
+	
+	.parallax-container {
+		position: relative;
+		overflow: hidden;
+		height: 100%;
+	}
+	
+	.parallax-container h1 {
+		color: #ffffff;
+		text-align: center;
+		position: relative;
+		top: 35%;
+	}
+
+	.parallax-container .parallax {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: -1
+	}
+
+	.parallax-container .parallax img {
+		display: none;
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		min-width: 100%;
+		min-height: 100%;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+		-webkit-transform: translateX(-50%);
+		transform: translateX(-50%)
 	}
 
 
@@ -998,7 +1056,7 @@
 		}
 
 		.navbar-custom.top-nav-collapse {
-			border-bottom: 1px solid rgba(255,255,255,.3);
+			
 		}
 		
 		.intro {
@@ -1030,11 +1088,12 @@
 		.navbar-custom .nav.navbar-nav {
 			
 
-		background-color: rgba(255,255,255,.4);
+		
 		}
 		
 		.navbar.navbar-custom.navbar-fixed-top {
 			margin-bottom: 30px;
+			background-color: transparent;
 		}
 		
 		.tp-banner-container {
@@ -1097,7 +1156,7 @@
 		border-color: #000;
 		border-style: none;
 		padding-bottom: 100px;
-		font-family: 'Cabin Condensed', sans-serif;
+		font-family: 'Amatic SC', cursive;
 	}
 
 	.baking-intro .slogan h4 {
@@ -1109,7 +1168,7 @@
 	#baking-trial {
 		width:100%;
 		position:relative;
-		background: url(../img/baking-trial-banner1.jpg) no-repeat top center;
+		background: url(../img/baking-trial-banner.jpg) no-repeat top center;
 		background-size: cover;
 		height: auto;
 		
@@ -1220,7 +1279,7 @@
 		font-size: 72px;
 		line-height: 60px;
 		font-weight: 700;
-		font-family: rage;
+		font-family: 'Amatic SC', cursive;
 		background-color: rgba(0, 0, 0, 0);
 		text-decoration: none;
 		border-width: 0px;
@@ -1236,16 +1295,7 @@
 	
 	#corporate {
 		text-align: center;
-		padding: 50px 0 ;
-		width:100%;
-		position:relative;
-		background-image: url(../img/corporate-cta.jpg);
-		background-attachment: fixed;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-size: cover;
-		height: 50%;	
+
 	}
 
 	#corporate h1 {
@@ -1600,6 +1650,56 @@
 		color: #fff;
 	}
 	
+	/* ===========================
+	  --- Chef
+	  ============================ */
+	 
+	 .our-chef {
+	  width:100%;
+	  position:relative;
+	  background: url(../img/our-chefs-bg.jpg) no-repeat top center;
+	  background-size: cover;
+	  height: auto;
+	 }
+
+	 #our-chef.our-chef {
+	  padding:20% 0 0 0;
+	 }
+
+	 .our-chef .slogan {
+	  text-align: center;
+
+	 }
+
+	 .our-chef .page-scroll {
+	  text-align: center;
+	 }
+
+
+	 .our-chef-text {
+	  font-size: 18px;
+	 }
+
+	 .our-chef .slogan h2 {
+	  color: #FFF;
+	  font-size: 72px;
+	  line-height: 60px;
+	  font-weight: 700;
+	  font-family: rage;
+	  background-color: rgba(0, 0, 0, 0);
+	  text-decoration: none;
+	  border-width: 0px;
+	  border-color: #000;
+	  border-style: none;
+	  padding-bottom: 100px;
+	 }
+
+	 .our-chef .slogan h4 {
+	  color: #fff;
+	  font-style: italic;
+	  font-family: Dosis;
+	  }
+	
 	
 	/* ===========================
 	--- Calendar for Classes
@@ -1608,7 +1708,7 @@
 	.calendar{
 		width:100%;
 		position:relative;
-		background: url(../img/privacy-policy-banner.jpg) no-repeat top center;
+		background: url(../img/calendar-banner.jpg) no-repeat top center;
 		background-size: cover;
 		height: auto;
 		padding: 10% 0 0 0;
