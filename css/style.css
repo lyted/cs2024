@@ -149,17 +149,17 @@
 
 	.navbar-custom ul.nav ul.dropdown-menu li a {
 		padding: 10px 20px;
-		color: #aa9986;
+		color: #d1bca5;
 		font-family: 'Quicksand', sans-serif;
 	} 
 
 	.navbar-custom ul.nav ul.dropdown-menu li a:hover {
 		background: #fefefe;
-		color:#7a6d5f;
+		color: #f2b21f;
 	}
 
 	.navbar-custom.top-nav-collapse ul.nav ul.dropdown-menu li a {
-		color: #666;
+		color:#4f463d;
 	} /* colour of text in dropdown menu*/
 
 	.navbar-custom .nav li a {
@@ -383,6 +383,7 @@
 		text-align: center;
 		position: relative;
 		top: 35%;
+		go
 	}
 
 
@@ -449,17 +450,13 @@
 	}
 	
 	#why {
-		margin: 50px;
+		height: 400px;
 	}
 	.aboutwhy h2 {
 		text-align: center;
 		font-family: 'Archivo Narrow', sans-serif;
 	}
-	
-	.aboutwhy p {
-		text-align: center;
-		font-family:'Quicksand', sans-serif;
-	}
+
 	
 	#story {
 		width:100%;
@@ -746,6 +743,7 @@
 		color: #f8f8f8;
 		word-wrap: break-word;
 		font-size: 12px;
+		font-family: 'Quicksand', sans-serif;
 	}
 
 	#widget a {
@@ -754,6 +752,7 @@
 		-moz-transition: all .2s ease-in-out;
 		transition: all .2s ease-in-out;
 		font-size: 12px;
+		font-family: 'Quicksand', sans-serif;
 	}
 
 	#widget a:hover,
@@ -798,8 +797,26 @@
 		color: #f8f8f8;
 		word-wrap: break-word;
 		font-size: 12px;
+		font-family: 'Quicksand', sans-serif;
 	}
 	
+	#footer a {
+		text-align:center;
+		text-decoration: none
+		color: #f8f8f8;
+		word-wrap: break-word;
+		font-size: 14px;
+		font-family: 'Quicksand', sans-serif;
+	}
+	
+	#footer a:hover {
+		text-align:center;
+		text-decoration: none
+		color: #f2b21f;
+		word-wrap: break-word;
+		font-size: 14px;
+		font-family: 'Quicksand', sans-serif;
+	}
 	/* ===========================
 	--- Calendar
 	============================ */
@@ -902,9 +919,23 @@
 		margin-top: 50px;
 	}
 	
-	.btn-bake {
-		background-color: #7a6d5f;
-		color: #ffffff;
+	.btn-class {
+		font-family: 'Quicksand', sans-serif; 
+		color:#ffffff;
+		padding: 10px 20px; 
+		background-color: #aa9986; 
+		margin-top: 50px;
+	}
+	
+	.btn-class:hover {
+		background-color: #564d44;
+		color: #7a6d5f;
+		margin-top: 50px;
+	}
+	
+	.btn-bake:hover {
+		background-color: #564d44;
+		color: #7a6d5f;
 		margin-top: 50px;
 	}
 
@@ -1085,15 +1116,10 @@
 
 	@media (max-width:480px) {
 
-		.navbar-custom .nav.navbar-nav {
-			
-
-		
-		}
 		
 		.navbar.navbar-custom.navbar-fixed-top {
 			margin-bottom: 30px;
-			background-color: transparent;
+			background-color: rgba(0,10,0,0,0.5);
 		}
 		
 		.tp-banner-container {
@@ -1366,7 +1392,7 @@
 		font-size: 72px;
 		line-height: 60px;
 		font-weight: 700;
-		font-family: rage;
+		font-family: 'Amatic SC', cursive;
 		background-color: rgba(0, 0, 0, 0);
 		text-decoration: none;
 		border-width: 0px;
@@ -1535,6 +1561,14 @@
 	--- Privacy Policy
 	============================ */
 	
+	#pnp p {
+		font-family: 'Quicksand', sans-serif;
+	}
+	
+	#pnp h2 {
+		font-family: 'Cabin Condensed', sans-serif;
+	}
+	
 	.privacypolicy{
 		width:100%;
 		position:relative;
@@ -1573,6 +1607,13 @@
 	/* ===========================
 	--- TnC
 	============================ */
+	#tnc p {
+		font-family: 'Quicksand', sans-serif;
+	}
+	
+	#tnc h2 {
+		font-family: 'Cabin Condensed', sans-serif;
+	}
 	
 	.terms{
 		width:100%;
