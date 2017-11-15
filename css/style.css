@@ -328,7 +328,7 @@
 	.intro {
 		width:100%;
 		position:relative;
-		background: url(../img/banner.jpg) no-repeat top center;
+		background: url("https://photos.app.goo.gl/f4nPFjmErENs2F2x1") no-repeat top center;
 		background-size: cover;
 		height: auto;
 	}
