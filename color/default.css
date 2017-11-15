@@ -1,0 +1,24 @@
+
+a,.tp-caption a.btn:hover {
+	color: #aa9986;
+}
+.top-nav-collapse {
+	background:rgba(0, 10, 0, 0.5);
+}
+
+.navbar-custom ul.nav ul.dropdown-menu li a:hover {
+	color: #aa9986;
+}
+
+
+.widget-avatar .avatar:hover {
+    border: 5px solid #aa9986;
+}
+
+
+
+.btn-skin {
+  color: #fff;
+  background-color: #aa9986;
+  border-color: #aa9986;
+}
