@@ -16,6 +16,7 @@
   <link href="css/animate.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet">
   <link href="color/default.css" rel="stylesheet">
+  <link rel="icon" href="img/icons/favicon.ico" type="image/x-icon">
  
   
 	<script type="text/javascript">
@@ -33,7 +34,7 @@
     <div class="container">
       <div id="nav-scroll" class="navbar-header page-scroll">
 	   <a class="navbar-brand" href="index.html">
-          <img src="img/icons/orange and black.png" alt="Lorong Bakes"/>
+          <img src="img/icons/orange.png" alt="Lorong Bakes"/>
         </a>
 		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
             <i class="fa fa-bars"></i>
@@ -44,25 +45,31 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
         <ul class="nav navbar-nav">
-	          <li class="active"><a href="index.html">Home</a></li>
+	          <li class="active"><a href="index.html">HOME</a></li>
 			  <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">ABOUT <b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li><a href="about.html">Our Story</a></li>
+			  <li><a href="chefs.html">Our Chefs</a></li>
 			  <li><a href="our-studio.html">Our Studio</a></li>
             </ul>
           </li>
 		  <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Corporate <b class="caret"></b></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">CLASSES <b class="caret"></b></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Team Building</a></li>
-              <li><a href="#">Program Line Ups</a></li>
-			  <li><a href="#">Sign Up Form</a></li>
+              <li><a href="baking-class.html">INTRODUCTION</a></li>
+			  <li><a href="class-calendar.html">CLASS CALENDAR</a></li>
+            </ul>
+          </li>
+		  <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">CORPORATE <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="corporate-team-baking.html">Team Building</a></li>
+              <li><a href="corporate-activities.html">Program Line Ups</a></li>
             </ul>
           </li>
 	          <li><a href="contact.html">Contact Us</a></li>
 			  <li><a href="Frequently-Asked-Questions.html">FAQ</a></li>
-			  <li><a href= "privacy-policy.html">Privacy Policy</a></li>
 	        </ul>
      
       <!-- /.navbar-collapse -->
@@ -97,10 +104,17 @@
 
 			<div class="row" style="margin-bottom: 40px;">
 			 
-				<img src="https://i.imgur.com/XEh5fCZ.jpg height="331" width="216">
-				<img src="https://i.imgur.com/mQc6x4x.jpg" height="331" width="216">
-				<img src="https://i.imgur.com/lOIRplg.jpg" height="331" width="216">
-				<img src="https://i.imgur.com/RyyHqnD.jpg" alt="customize" height="331" width="216" >
+				<div class="col-md-4 col-lg-4">
+				<a id="e"><img class="bakingon" src="img/services-1.jpg" height="331" width="300" style="margin: 0px 20px;"><img class="bakingoff" src="img/services-1.2.jpg" height="331" width="300" style="margin: 0px 20px;"></a>
+				</div>
+				
+				<div class="col-md-4 col-lg-4">
+				<a id="e"><img class="festiveon" src="img/services-2.jpg" height="331" width="300" style="margin: 0px 20px;"><img class="festiveoff"src="img/services-2.2.jpg" height="331" width="300" style="margin: 0px 20px;"></a>
+				</div>
+				
+				<div class="col-md-4 col-lg-4">
+				<a id="e"><img class="teamon" src="img/services-3.jpg" height="331" width="300" style="margin: 0px 20px;"><img class="teamoff" src="img/services-3.2.jpg" height="331" width="300" style="margin: 0px 20px;"></a>
+				</div>
 			  </div>
 			</div>
 	
@@ -112,8 +126,11 @@
 
 	<div class="parallax-container">
 		<h1>Our Classes</h1>
+		<div class="tint"></div>
 		<div class="parallax">
-			
+			<video autoplay="autoplay" loop="loop">
+			  <source src="img/test.mp4" type="video/mp4" />
+			</video>
 		</div>
 	</div>
 	
@@ -131,7 +148,8 @@
           <div class="col-lg-8 col-lg-offset-2">
             <div class="wow" data-wow-delay="0.1s">
               <div class="section-heading">
-                <h2>VALUES</h2>
+                <h2 style="font-family: 'Cabin Condensed', sans-serif;
+	">VALUES</h2>
               </div>
             </div>
           </div>
@@ -191,7 +209,8 @@
 			<div class="wow fadeInRight" data-wow-delay="0.2s">
 				<div class="service-box">
 				  <div class="service-desc">
-					<button type="button" class="btn btn-bake btn-md">LEARN MORE</button>
+					<button type="button" class="btn btn-bake btn-md" style="font-family: 'Quicksand', sans-serif;
+	">LEARN MORE</button>
 				  </div>
 				</div>
 			</div>
@@ -208,11 +227,15 @@
 			<h1>Newsletter</h1>
 			<h3>Keep in touch with our bakers</h3>
 			<form>
-			<input type="email" placeholder="E-MAIL" required>
+			<div class="col-lg-2"></div>
+			<div class="col-lg-8">
+			<input style="background-color: #fff;color: #aa9986; border-radius: 40px; border: 1px solid transparent; padding: 30px 10px; font-size: 18px; margin: 10px 30px; font-family: 'Quicksand', sans-serif;" type="email" placeholder="E-MAIL" required>
 			<input type="submit" value="ENTER">
+			</div>
+			<div class="col-lg-2"></div>
 			</form>
 			<div class="parallax">
-				<img src="https://i.imgur.com/wVnZn9H.jpg"/>
+				<img src="img/index-classes.jpg"/>
 			</div>
 		</div>	
 	</section>
@@ -223,31 +246,35 @@
 	   <section id="widget">
 	   
 		<div class="container">
-		  <div class="row" style="margin-bottom: none;">
-			<div class="col-md-4 col-lg-4">
-				<h5> About </h5>
-				<p> We are ...... and we ..... blah blah blah blah blah blah. blah .... </p>
-				<a href="about.html">Read more... </a>
+		  <div class="row">
+			<div class="col-md-3 col-lg-3">
+				<h4> About Us </h4>
+				<p> Lorong Bakes was created with the intention to bring people closer together through the art of baking and making desserts.  </p>
+				<a href="about.html"><button type="button">READ MORE</button></a>
+			</div>
+			
+			<div class="col-md-3 col-lg-3">
+				<h4> Upcoming Classes </h4>
+				<p> We offer hands-on baking classes for everyone and our mission is to make baking fun and simple. </p>
+				<a href="class-calendar.html"><button type="button">Click here for our calendar!</button></a>
+			</div>
+			
+			<div class="col-md-3 col-lg-3">
+				<h4> Subscribe to Us </h4>
+				<p> We will update you periodically via email with exciting culinary news, upcoming events, classes and workshops. Don't miss out! </p>
+			</div>
+			
+			<div class="col-md-3 col-lg-3">
+				<h4> Contact Us </h4>
+				<p>Address | 181 Orchard Road Orchard Central #01-27</p>
+				<p>Tel. | +65 6273 2341</p>
+				<p>Email | enquiry@lorongbake.com</a></p>
 				<strong>We're on social networks</strong><br>
 				<ul class="company-social">
 					<li class="social-facebook"><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
 					<li class="social-twitter"><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
 					<li class="social-instagram"><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
-					<li class="social-google"><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
 				</ul>
-			</div>
-			
-			<div class="col-md-4 col-lg-4">
-				<h5> Upcoming Events </h5>
-				<p> We are ...... and we ..... blah blah blah blah blah blah. blah ....We are ...... and we ..... blah blah blah blah blah blah. blah .... </p>
-			</div>
-			
-			<div class="col-md-4 col-lg-4">
-				<h5> Contact Us </h5>
-				<p>Address: SINGAPORE Somewhere</p>
-				<p>Phone: (+65) 687638373</p>
-				<p>Skype: Andia_Agency</p>
-				<p>Email: <a href="">lorongbakes@live.com</a></p>
 			</div>
 			
 		  </div>
@@ -264,8 +291,8 @@
 		  <div class="row" style="margin: 0% 0px 0px 0px">		  
 			<div class="wow" data-wow-delay="0.5s">
 				<div class="page-scroll">
-					<a href="#intro" style="text-decoration: none; color: #fff;">
-						| Privacy Terms |</i>
+					<a href="privacy-policy.html" style="text-decoration: none; color: #fff;">
+						| Privacy Policy | </a> <a href="terms-and-conditions.html" style="text-decoration: none; color: #fff;">Terms &amp; Conditions |</i>
 					</a>
 				</div>
 			</div>
