@@ -66,61 +66,69 @@
 		
 	}
 
-	.navbar-brand {
-		font-weight: 700;
-	}
-	.navbar-brand {
-		height: 40px;
-		padding: 5px 15px;
-		font-size: 18px;
-		line-height: 1em;
-	}
+	.navbar {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+ 
+}
 
-	.navbar-brand h1{
-		color: #fff;
-		font-size: 20px;
-		line-height: 40px;
-	}
+.navbar-brand {
+    font-weight: 700;
+}
+.navbar-brand {
+  height: 40px;
+  padding: 5px 15px;
+  font-size: 18px;
+  line-height: 1em;
+}
 
-	.navbar-brand img{
-		height:40px;
-		
-	}
+.navbar-brand h1{
+ color: #fff;
+  font-size: 20px;
+  line-height: 40px;
+}
 
+.navbar-brand:focus {
+    outline: 0;
+}
 
-	.navbar-brand:focus {
-		outline: 0;
-	}
+.nav.navbar-nav {
+    background-color: rgba(255,255,255,.0);
+}
 
-	.nav.navbar-nav {
-		
-	}/* color of the navbar text area on the right before scrolling down */
+.navbar-custom.top-nav-collapse .nav.navbar-nav {
+    background-color: rgba(0,0,0,0);
+}
 
-	.navbar-custom.top-nav-collapse .nav.navbar-nav {
-		
-	} /*color of background of right navbar after scrolling down*/
+.navbar-custom ul.nav li a {
+ font-size: 12px;
+ letter-spacing: 1px;
+    color: #fff ;
+ text-transform: uppercase;
+ font-weight: 700;
+}
 
-	.navbar-custom ul.nav li a {
-		font-size: 12px;
-		letter-spacing: 1px;
-		color: #ffffff;
-		text-transform: uppercase;
-		font-weight: 700;
-	}
+.navbar-custom ul.nav li a.active {
+ font-size: 12px;
+ letter-spacing: 1px;
+ color: #f2b21f ;
+ text-transform: uppercase;
+ font-weight: 700;
+}
 
-	.navbar-custom.top-nav-collapse ul.nav li a {
-		-webkit-transition: all .2s ease-in-out;
-		-moz-transition: all .2s ease-in-out;
-		transition: all .2s ease-in-out;
-		color: #fff;
-		font-family: 'Quicksand', sans-serif;
-	} /* affects colour of the navbar text */
-	
+.navbar-custom.top-nav-collapse ul.nav li a {
+     -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+ color: #fff;
+}
+
 	.navbar-custom.top-nav-collapse ul.nav li a:hover {
 		-webkit-transition: all .2s ease-in-out;
 		-moz-transition: all .2s ease-in-out;
 		transition: all .2s ease-in-out;
 		color: #f2b21f;
+		font-weight: 700;
 	} /* affects colour of the navbar text */
 	
 	.navbar-custom.top-nav-collapse ul.nav li a.active {
@@ -128,7 +136,61 @@
 		-moz-transition: all .2s ease-in-out;
 		transition: all .2s ease-in-out;
 		color: #f2b21f;
+		font-weight: 700;
+		
 	} /* affects colour of the navbar text */
+
+.navbar-custom ul.nav ul.dropdown-menu {
+   border-radius: 0; 
+}
+
+.navbar-custom ul.nav ul.dropdown-menu li {
+ border-bottom: 1px solid #f5f5f5;
+
+}
+
+.navbar-custom ul.nav ul.dropdown-menu li:last-child{
+ border-bottom: none;
+}
+
+.navbar-custom ul.nav ul.dropdown-menu li a {
+ padding: 10px 20px;
+}
+
+.navbar-custom ul.nav ul.dropdown-menu li a:hover {
+ background: #fefefe;
+}
+
+.navbar-custom.top-nav-collapse ul.nav ul.dropdown-menu li a {
+ color: #666;
+}
+
+.navbar-custom .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li.active {
+    outline: 0;
+	color: #f2b21f;
+    background-color: rgba(255,255,255,.2);
+	
+}
+
+
+.navbar-toggle {
+    padding: 4px 6px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.navbar-toggle:focus,
+.navbar-toggle:active {
+    outline: 0;
+}
 	
 	.dropdown:hover .dropdown-menu {
 		display: block;
@@ -150,7 +212,6 @@
 	.navbar-custom ul.nav ul.dropdown-menu li a {
 		padding: 10px 20px;
 		color: #d1bca5;
-		font-family: 'Quicksand', sans-serif;
 	} 
 
 	.navbar-custom ul.nav ul.dropdown-menu li a:hover {
@@ -172,8 +233,8 @@
 	.navbar-custom .nav li a:focus{
 		outline: 0;
 		color: #f2b21f;
-		font-family: 'Quicksand', sans-serif;
-		background-color: rgba(255,255,255,.0);
+		font-size: 12px;
+		background-color: transparent;
 	}
 	
 
@@ -187,6 +248,10 @@
 	.navbar-toggle:focus,
 	.navbar-toggle:active {
 		outline: 0;
+		color: #f2b21f;
+		font-weight: 100;
+		background-color: transparent;
+
 	}
 	
 
@@ -383,7 +448,6 @@
 		text-align: center;
 		position: relative;
 		top: 35%;
-		go
 	}
 
 
@@ -433,10 +497,10 @@
 
 	.about .slogan h2 {
 		color: #FFF;
-		font-size: 60px;
+		font-size: 72px;
 		line-height: 60px;
 		font-weight: 700;
-		font-family: 'Cabin Condensed', sans-serif;
+		font-family: 'Amatic SC', cursive;
 		background-color: rgba(0, 0, 0, 0);
 		text-decoration: none;
 		border-width: 0px;
@@ -549,16 +613,14 @@
 	.parallax-container form {
 		text-align: center;
 		position: relative;
-		border-radius: 5px;
-		border: 1px solid transparent;
+		border: none;
 		top: 35%;
 	}
 	
 	.parallax-container input[type=submit]  {
 		background-color: #7a6d5f;
 		color: #fff;
-		border-radius: 5px;
-		border: 1px solid transparent;
+		border: none;
 		padding: 10px 50px;
 	}
 	
@@ -765,8 +827,7 @@
 		background-color: #aa9986;
 		color: #fff;
 		font-family: 'Quicksand', sans-serif;
-		border: 1px solid transparent;
-		border-radius: 2px;
+		border: none;
 		padding: 10px;
 		margin: 10px 10px 10px 0px;
 	}
@@ -1067,7 +1128,7 @@
 		margin-top: 0;
 	}
 
-	/* Media queries */
+	/* media queries */
 
 	@media(min-width:767px) {
 
@@ -1158,8 +1219,6 @@
 
 	.baking-intro .slogan {
 		text-align: center;
-		
-
 	}
 
 	.baking-intro .page-scroll {
@@ -1171,18 +1230,17 @@
 		font-size: 18px;
 	}
 
-	.intro .slogan h2 {
+	.baking-intro .slogan h2 {
 		color: #FFF;
 		font-size: 72px;
 		line-height: 60px;
 		font-weight: 700;
+		font-family: 'Amatic SC', cursive;
 		background-color: rgba(0, 0, 0, 0);
 		text-decoration: none;
 		border-width: 0px;
 		border-color: #000;
 		border-style: none;
-		padding-bottom: 100px;
-		font-family: 'Amatic SC', cursive;
 	}
 
 	.baking-intro .slogan h4 {
@@ -1277,7 +1335,7 @@
 	.corporate-intro {
 		width:100%;
 		position:relative;
-		background: url(../img/corporate-bg.jpeg) no-repeat top center;
+		background: url(../img/corporate-bg.jpg) no-repeat top center;
 		background-size: cover;
 		height: 70%;
 	}
@@ -1366,7 +1424,7 @@
 		position:relative;
 		background: url(../img/corporate-team-baking-bg.jpg) no-repeat top center;
 		background-size: cover;
-		height: auto;
+		height: 70%;
 	}
 
 	#corporate-baking.corporate-baking {
@@ -1476,6 +1534,7 @@
 		background-color: transparent;
 		width: 80%;
 		height: 40px;
+		margin-top: 28px;
 	}
 	
 	.newsletter {
@@ -1517,15 +1576,16 @@
 
 	 .thank .slogan h2 {
 	  color: #FFF;
-	  font-size: 60px;
-	  line-height: 60px;
-	  font-weight: 700;
-	  font-family: Montserrat, sans-serif;
-	  background-color: rgba(0, 0, 0, 0);
-	  text-decoration: none;
-	  border-width: 0px;
-	  border-color: #000;
-	  border-style: none;
+		font-size: 72px;
+		line-height: 60px;
+		font-weight: 700;
+		font-family: 'Amatic SC', cursive;
+		background-color: rgba(0, 0, 0, 0);
+		text-decoration: none;
+		border-width: 0px;
+		border-color: #000;
+		border-style: none;
+		padding-bottom: 50px;
 	 }
 
 	 .thank .slogan h4 {
@@ -1559,10 +1619,10 @@
 
 	.faq-header .slogan h2 {
 		color: #FFF;
-		font-size: 60px;
+		font-size: 72px;
 		line-height: 60px;
 		font-weight: 700;
-		font-family: Montserrat, sans-serif;
+		font-family: 'Amatic SC', cursive;
 		background-color: rgba(0, 0, 0, 0);
 		text-decoration: none;
 		border-width: 0px;
@@ -1611,10 +1671,10 @@
 
 	.privacypolicy .slogan h2 {
 		color: #FFF;
-		font-size: 60px;
+		font-size: 72px;
 		line-height: 60px;
 		font-weight: 700;
-		font-family: Montserrat, sans-serif;
+		font-family: 'Amatic SC', cursive;
 		background-color: rgba(0, 0, 0, 0);
 		text-decoration: none;
 		border-width: 0px;
@@ -1657,10 +1717,10 @@
 
 	.terms .slogan h2 {
 		color: #FFF;
-		font-size: 60px;
+		font-size: 72px;
 		line-height: 60px;
 		font-weight: 700;
-		font-family: Montserrat, sans-serif;
+		font-family: 'Amatic SC', cursive;
 		background-color: rgba(0, 0, 0, 0);
 		text-decoration: none;
 		border-width: 0px;
@@ -1698,10 +1758,10 @@
 
 	.our-studio .slogan h2 {
 		color: #FFF;
-		font-size: 60px;
+		font-size: 72px;
 		line-height: 60px;
 		font-weight: 700;
-		font-family: Montserrat, sans-serif;
+		font-family: 'Amatic SC', cursive;
 		background-color: rgba(0, 0, 0, 0);
 		text-decoration: none;
 		border-width: 0px;
@@ -1744,17 +1804,16 @@
 	 }
 
 	 .our-chef .slogan h2 {
-	  color: #FFF;
-	  font-size: 72px;
-	  line-height: 60px;
-	  font-weight: 700;
-	  font-family: rage;
-	  background-color: rgba(0, 0, 0, 0);
-	  text-decoration: none;
-	  border-width: 0px;
-	  border-color: #000;
-	  border-style: none;
-	  padding-bottom: 100px;
+	 color: #FFF;
+		font-size: 72px;
+		line-height: 60px;
+		font-weight: 700;
+		font-family: 'Amatic SC', cursive;
+		background-color: rgba(0, 0, 0, 0);
+		text-decoration: none;
+		border-width: 0px;
+		border-color: #000;
+		border-style: none;
 	 }
 
 	 .our-chef .slogan h4 {
@@ -1788,10 +1847,10 @@
 
 	.calendar .slogan h2 {
 		color: #FFF;
-		font-size: 60px;
+		font-size: 72px;
 		line-height: 60px;
 		font-weight: 700;
-		font-family: Montserrat, sans-serif;
+		font-family: 'Amatic SC', cursive;
 		background-color: rgba(0, 0, 0, 0);
 		text-decoration: none;
 		border-width: 0px;
